@@ -55,7 +55,7 @@ export const SYSTEM_ELEMENTS = {
 export const BACKOFFICE_MENU_ELEMENTS = [
     {
       title:'Ejemplo',
-      route:'Ruta',
+      route:'ruta',
       alert:'normal',
       icon: world,
       user_type_acces: [USER_TYPES.UNRRESTRICTED]
@@ -90,11 +90,11 @@ export const SOCIAL_MEDIA = [
 export const FRONTEND_MENU_ELEMENTS = [
   {
     title:'Inicio',
-    route:'/Home'
+    route:'/home'
   },
   {
     title:'Elemento',
-    route:'/Ruta'
+    route:'/ruta'
   }
 ];
 export const FOOTER_CONFIG = [
