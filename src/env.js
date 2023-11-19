@@ -34,12 +34,17 @@ import instagram from './Assets/SocialM/instagram.svg';
 
 //System Assets
 import Logo from './Assets/DEMO/r-logo.png';
-import RLogo from './Assets/DEMO/r-logo.png';
-import FLogo from './Assets/DEMO/f-logo.png';
+import RLogo from './Assets/DEMO/f-logo.png';
+import FLogo from './Assets/DEMO/r-logo.png';
 
 const USER_TYPES = {
   OFF: -1,
-  UNRRESTRICTED: 0,
+  UNRRESTRICTED: 0
+}
+
+const REDIRECT_TYPES = {
+  BLANK: 0,
+  LINK: 1
 }
 
 //Main Config
@@ -65,8 +70,19 @@ export const BACKOFFICE_MENU_ELEMENTS = [
 //Frontend Config
 export const OFF_MENU_ELEMENTS = [
   {
-    title:'ELEMENTO',
-    url:''
+    title:'Responsabilidad Social Empresaria (RSE)',
+    url:'/RSE',
+    type: REDIRECT_TYPES.LINK
+  },
+  {
+    title:'Objetivos de desarrollo Sostenible (ODS)',
+    url:'/ODS/0',
+    type: REDIRECT_TYPES.LINK
+  },
+  {
+    title:'¿Qué son las normas ISO?',
+    url:'/ISO/0',
+    type: REDIRECT_TYPES.LINK
   }
 ];
 export const SOCIAL_MEDIA = [
@@ -93,46 +109,73 @@ export const FRONTEND_MENU_ELEMENTS = [
     route:'/home'
   },
   {
-    title:'Elemento',
-    route:'/ruta'
-  }
+    title:'Noticias',
+    route:'/home'
+  },
+  {
+    title:'Eventos',
+    route:'/home'
+  },
+  {
+    title:'Campañas',
+    route:'/home'
+  },
+  {
+    title:'Instituciones',
+    route:'/home'
+  },
+  {
+    title:'Nosotros',
+    route:'/home'
+  },
+  {
+    title:'Ingreso',
+    route:'/home'
+  },
 ];
 export const FOOTER_CONFIG = [
   {
-      title:'ACCESOS DIRECTOS',
+      title:'Objetivos de Desarrollo Sostenible (ODS)',
       elements: [
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS3: Salud y Bienestar',
+            url:'/ODS/1',
+            type: REDIRECT_TYPES.LINK
           },
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS4: Educación de calidad',
+            url:'/ODS/2',
+            type: REDIRECT_TYPES.LINK
           },
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS5: Igualdad de Género',
+            url:'/ODS/3',
+            type: REDIRECT_TYPES.LINK
           },
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS7: Energía Asequible y No Contaminante',
+            url:'/ODS/4',
+            type: REDIRECT_TYPES.LINK
           },
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS10: Reducción de las Desigualdades',
+            url:'/ODS/5',
+            type: REDIRECT_TYPES.LINK
           },
           {
-            title:'Elemento del footer p1',
-            url:'https://google.com'
+            title:'ODS12: Producción y Consumo Responsable',
+            url:'/ODS/6',
+            type: REDIRECT_TYPES.LINK
           },
-      ]
-  },
-  {
-      title:'',
-      elements: [
           {
-              title:'Elemento del footer p2',
-              url:'https://google.com'
+            title:'ODS13: Acción por el Clima',
+            url:'/ODS/7',
+            type: REDIRECT_TYPES.LINK
+          },
+          {
+            title:'ODS17: Alianzas Estratégicas',
+            url:'/ODS/8',
+            type: REDIRECT_TYPES.LINK
           }
       ]
   },

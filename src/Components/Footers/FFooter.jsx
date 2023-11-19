@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FOOTER_CONFIG } from "../../env";
 
 
@@ -16,9 +17,19 @@ const FFooter = (props) => {
                                 <h2 className="min-h-[2rem] font-bold w-100-750">{item.title}</h2>
                                 {
                                     item.elements.map((item, index) => {
-                                        return(
-                                            <a key={index} href={item.url} target="_blank" className="my-[.2rem] opacity-80 duration-200 hover:opacity-100 w-100-750 t-l-750">{item.title}</a>
-                                        );
+                                        switch(item.type)
+                                        {
+                                            case(0):{
+                                                return(
+                                                    <a key={index} href={item.url} target="_blank" className="my-[.2rem] opacity-80 duration-200 hover:opacity-100 w-100-750 t-l-750">{item.title}</a>
+                                                );   
+                                            }
+                                            case(1):{
+                                                return(
+                                                    <Link to={item.url} replace={true} className="my-[.2rem] opacity-80 duration-200 hover:opacity-100 w-100-750 t-l-750">{item.title}</Link>
+                                                );
+                                            }
+                                        }
                                     })
                                 }
                             </div>

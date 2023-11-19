@@ -9,6 +9,9 @@ import Frontend from './Layouts/Frontend';
 
 //Frontend
 import Home from './Pages/Frontend/Home.jsx';
+import ISO from './Pages/Frontend/ISO.jsx';
+import ODS from './Pages/Frontend/ODS.jsx';
+import RSE from './Pages/Frontend/RSE.jsx';
 //Backoffice
 import LogIn from './Pages/Backoffice/LogIn.jsx';
 //User
@@ -89,6 +92,8 @@ const RouterApp = (props) => {
             <Route path="*" element={<NotFound />} />
             <Route path="/login" element={<LogIn logo={SYSTEM_ELEMENTS.rLogo} setUser={setUser} setIsOnMessage={props.setIsOnMessage} setIsOnLoading={props.setIsOnLoading} />} />
             {baseFrontRoutes('/home', <Home />)}
+            {baseFrontRoutes('/ISO/:isoId', <ISO />)}
+            {baseFrontRoutes('/ODS/:odsId', <ODS />)}
             {baseFrontRoutes('/home/:cardId', <CardDetail />)}
             {protectedRoutes}
           </Routes>

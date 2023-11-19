@@ -50,9 +50,20 @@ const FTopBar = (props) => {
                 <menu className="px-4 text-sm text-gray-900 font-semibold flex flex-row rsp-none-750">
                     {
                         props?.offMenuElements.map((item, index) => {
-                            return(
-                                <a className="px-2 duration-200 opacity-80 hover:opacity-100" href={item.url} target="_blank" key={index}>{item.title}</a>
-                            )
+                            
+                            switch(item.type)
+                            {
+                                case(0):{
+                                    return(
+                                        <a className="px-2 duration-200 opacity-80 hover:opacity-100" href={item.url} target="_blank" key={index}>{item.title}</a>
+                                    );
+                                }
+                                case(1):{
+                                    return(
+                                        <Link className="px-2 duration-200 opacity-80 hover:opacity-100" to={item.url} replace={true} key={index}>{item.title}</Link>
+                                    );
+                                }
+                            }
                         })
                     }
                     {
@@ -72,9 +83,18 @@ const FTopBar = (props) => {
             <div className={`w-[100%] flex flex-col justify-center items-center overflow-hidden duration-700 h-auto max-h-[0vh] ${chebronOpen}`}>
                 {
                     props?.offMenuElements.map((item, index) => {
-                        return(
-                            <a className="px-2 duration-200 opacity-80 hover:opacity-100 font-semibold my-2" href={item.url} target="_blank" key={index}>{item.title}</a>
-                        )
+                        switch(item.type){
+                            case(0):{
+                                return(
+                                    <a className="px-2 duration-200 opacity-80 hover:opacity-100 font-semibold my-2" href={item.url} target="_blank" key={index}>{item.title}</a>
+                                );
+                            }
+                            case(1):{
+                                return(
+                                    <Link className="px-2 duration-200 opacity-80 hover:opacity-100 font-semibold my-2" to={item.url} replace={true} key={index}>{item.title}</Link>
+                                );
+                            }
+                        }
                     })
                 }
                 <div className="w-[100vw] flex flex-row justify-evenly items-center my-5">
