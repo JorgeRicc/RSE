@@ -94,6 +94,7 @@ const RouterApp = (props) => {
             {baseFrontRoutes('/home', <Home />)}
             {baseFrontRoutes('/ISO/:isoId', <ISO />)}
             {baseFrontRoutes('/ODS/:odsId', <ODS />)}
+            {baseFrontRoutes('/RSE', <RSE />)}
             {baseFrontRoutes('/home/:cardId', <CardDetail />)}
             {protectedRoutes}
           </Routes>

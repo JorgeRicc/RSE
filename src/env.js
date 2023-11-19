@@ -70,7 +70,7 @@ export const BACKOFFICE_MENU_ELEMENTS = [
 //Frontend Config
 export const OFF_MENU_ELEMENTS = [
   {
-    title:'Responsabilidad Social Empresaria (RSE)',
+    title:'App Responsabilidad Social Empresaria (RSE)',
     url:'/RSE',
     type: REDIRECT_TYPES.LINK
   },
@@ -135,6 +135,21 @@ export const FRONTEND_MENU_ELEMENTS = [
 ];
 export const FOOTER_CONFIG = [
   {
+    title:'Responsabilidad Social Empresaria (RSE) ISO 26000',
+    elements: [
+        {
+            title:'En que consiste',
+            url:'/ISO/1',
+            type: REDIRECT_TYPES.LINK
+        },
+        {
+          title:'Objetivos',
+          url:'/ISO/2',
+          type: REDIRECT_TYPES.LINK
+        },
+    ]
+  },
+  {
       title:'Objetivos de Desarrollo Sostenible (ODS)',
       elements: [
           {
@@ -180,22 +195,15 @@ export const FOOTER_CONFIG = [
       ]
   },
   {
-      title:'Elementos p3',
-      elements: [
-          {
-              title:'Telefono',
-              url:'tel:2236777544'
-          },
-          {
-              title:'Telefono',
-              url:'tel:2236777544'
-          },
-          {
-              title:'Telefono',
-              url:'tel:2236777544'
-          }
-      ]
-  }
+    title:'Desarrollado por Fundacion 360',
+    elements: [
+        {
+            title:'Fudnacion 360',
+            url:'https://fundacion360.com.ar/index.html',
+            type: REDIRECT_TYPES.BLANK
+        }
+    ]
+  },
 ];
 
 //Iconos
