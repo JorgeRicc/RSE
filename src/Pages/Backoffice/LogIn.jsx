@@ -22,7 +22,7 @@ const LogIn = (props) => {
     return(
         <>
         {
-            isUserData && (<Navigate to="" replace={true} />)
+            isUserData && (<Navigate to="" replace={false} />)
         }
         <section className="flex justify-center items-center">
             <div className="bg-green-500 shadow-xl rounded-xl flex justify-between pr-10 mt-[20vh] shadow-x flex-col-750 pad-y-750">
