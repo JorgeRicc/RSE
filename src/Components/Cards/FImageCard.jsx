@@ -23,7 +23,7 @@ const FImageCard = ({ title, date, preview, image, imageAlt, color, url }) => {
     return (
         <div className={`p-4 md:p-12 lg:p-4 rounded-2xl h-full transition-all cursor-pointer shadow-xl`} onClick={onClickHandler}>
                 {
-                    onRedirect && (<Navigate to={url} replace={true}/>)
+                    onRedirect && (<Navigate to={url} replace={false}/>)
                 }
                 <div className="lg:grid lg:grid-cols-12 mx-auto">
                     <div className="lg:col-span-5 lg:m-auto lg:pr-4 mx-auto">

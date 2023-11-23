@@ -135,7 +135,7 @@ const ODS = (prop) => {
     return(
         <section className="py-[3rem] flex flex-col justify-center items-center">
             {
-                (parseInt(odsId) < 0 || parseInt(odsId) > ODSS.length - 1) && (<Navigate to="/404" replace={true} />)
+                (parseInt(odsId) < 0 || parseInt(odsId) > ODSS.length - 1) && (<Navigate to="/404" replace={false} />)
             }
             {ODSS[parseInt(odsId)]}
         </section>

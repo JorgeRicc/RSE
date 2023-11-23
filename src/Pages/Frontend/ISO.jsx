@@ -101,7 +101,7 @@ const ISO = (prop) => {
     return(
         <section className="py-[3rem] flex flex-col justify-center items-center">
             {
-                (parseInt(isoId) < 0 || parseInt(isoId) > ISOS.length - 1) && (<Navigate to="/404" replace={true} />)
+                (parseInt(isoId) < 0 || parseInt(isoId) > ISOS.length - 1) && (<Navigate to="/404" replace={false} />)
             }
             {ISOS[parseInt(isoId)]}
         </section>

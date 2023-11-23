@@ -34,7 +34,7 @@ const Dashboard = (props) => {
     return(
         <>
             {
-                isOnLogin &&  (<Navigate to="/backoffice/login" replace={true} />)
+                isOnLogin &&  (<Navigate to="/backoffice/login" replace={false} />)
             }
             <TopBar setIsOpen={setIsOpen} isOpen={isOpen} elements={props.systemElements} notifications={props?.notifications}/>
             <LeftMenu isOpen={isOpen} elements={props.menuElements} allowedMenuItems={props?.allowedMenuItems}/>

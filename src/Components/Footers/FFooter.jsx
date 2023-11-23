@@ -26,7 +26,7 @@ const FFooter = (props) => {
                                             }
                                             case(1):{
                                                 return(
-                                                    <Link to={item.url} replace={true} className="my-[.2rem] opacity-80 duration-200 hover:opacity-100 w-100-750 t-l-750">{item.title}</Link>
+                                                    <Link to={item.url} replace={false} className="my-[.2rem] opacity-80 duration-200 hover:opacity-100 w-100-750 t-l-750">{item.title}</Link>
                                                 );
                                             }
                                         }

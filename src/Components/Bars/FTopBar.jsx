@@ -60,7 +60,7 @@ const FTopBar = (props) => {
                                 }
                                 case(1):{
                                     return(
-                                        <Link className="px-2 duration-200 opacity-80 hover:opacity-100" to={item.url} replace={true} key={index}>{item.title}</Link>
+                                        <Link className="px-2 duration-200 opacity-80 hover:opacity-100" to={item.url} replace={false} key={index}>{item.title}</Link>
                                     );
                                 }
                             }
@@ -91,7 +91,7 @@ const FTopBar = (props) => {
                             }
                             case(1):{
                                 return(
-                                    <Link className="px-2 duration-200 opacity-80 hover:opacity-100 font-semibold my-2" to={item.url} replace={true} key={index}>{item.title}</Link>
+                                    <Link className="px-2 duration-200 opacity-80 hover:opacity-100 font-semibold my-2" to={item.url} replace={false} key={index}>{item.title}</Link>
                                 );
                             }
                         }
