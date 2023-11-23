@@ -15,14 +15,14 @@ const LogIn = (props) => {
 
     const onSubmmit = async (e) => {
         e.preventDefault();
-        
+        setIsUserData(true);
     }
 
 
     return(
         <>
         {
-            isUserData && (<Navigate to="" replace={false} />)
+            isUserData && (<Navigate to="/dashboard" replace={false} />)
         }
         <section className="flex justify-center items-center">
             <div className="bg-green-500 shadow-xl rounded-xl flex justify-between pr-10 mt-[20vh] shadow-x flex-col-750 pad-y-750">

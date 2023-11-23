@@ -37,6 +37,45 @@ import Logo from './Assets/DEMO/r-logo.png';
 import RLogo from './Assets/DEMO/f-logo.png';
 import FLogo from './Assets/DEMO/r-logo.png';
 
+import ODS1 from './Assets/odsIcons/1.png';
+import ODS2 from './Assets/odsIcons/2.png';
+import ODS3 from './Assets/odsIcons/3.png';
+import ODS4 from './Assets/odsIcons/4.png';
+import ODS5 from './Assets/odsIcons/5.png';
+import ODS6 from './Assets/odsIcons/6.png';
+import ODS7 from './Assets/odsIcons/7.png';
+import ODS8 from './Assets/odsIcons/8.png';
+import ODS9 from './Assets/odsIcons/9.png';
+import ODS10 from './Assets/odsIcons/10.png';
+import ODS11 from './Assets/odsIcons/11.png';
+import ODS12 from './Assets/odsIcons/12.png';
+import ODS13 from './Assets/odsIcons/13.png';
+import ODS14 from './Assets/odsIcons/14.png';
+import ODS15 from './Assets/odsIcons/15.png';
+import ODS16 from './Assets/odsIcons/16.png';
+import ODS17 from './Assets/odsIcons/17.png';
+
+export const ODS_ICONS = {
+  ODS_1:ODS1,
+  ODS_2:ODS2,
+  ODS_3:ODS3,
+  ODS_4:ODS4,
+  ODS_5:ODS5,
+  ODS_6:ODS6,
+  ODS_7:ODS7,
+  ODS_8:ODS8,
+  ODS_9:ODS9,
+  ODS_10:ODS10,
+  ODS_11:ODS11,
+  ODS_12:ODS12,
+  ODS_13:ODS13,
+  ODS_14:ODS14,
+  ODS_15:ODS15,
+  ODS_16:ODS16,
+  ODS_17:ODS17,
+};
+//System Assets
+
 const USER_TYPES = {
   OFF: -1,
   UNRRESTRICTED: 0
@@ -129,7 +168,7 @@ export const FRONTEND_MENU_ELEMENTS = [
   },
   {
     title:'Instituciones',
-    route:'/home'
+    route:'/instituciones'
   },
   {
     title:'Nosotros',
@@ -287,12 +326,9 @@ export const VALIDATIONS = {
 
 
 //Dummy Data
-import PlaceholderImg from "./Assets/Images/SM-placeholder.png"
 import Puerto from "./Assets/DEMOImgs/puerto.jpg"
 
 const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-
 export const FCARDS = [
     {
         id: 0,
@@ -305,4 +341,25 @@ export const FCARDS = [
         color: "green",
         url: CARD_TYPES.NOTICIAS
     }
+]
+
+export const INSTIT = [
+  {
+    id:0,
+    name: 'Fundacion 360',
+    icon: Logo,
+    desc:"Fundación 360 se erige como un faro de inspiración para el público joven, guiándolos hacia el fascinante mundo de las tecnologías de la información y la comunicación (TIC). A través de cursos y eventos dinámicos, nuestra fundación se dedica apasionadamente a fomentar vocaciones en el ámbito de las TIC. Buscamos no solo transmitir conocimientos prácticos, sino también encender la chispa de la curiosidad y la creatividad. En Fundación 360, creemos que al nutrir las habilidades digitales desde una edad temprana, estamos construyendo puentes hacia un futuro donde la innovación y la tecnología son accesibles para todos. Únete a nosotros en este emocionante viaje de descubrimiento y crecimiento en el vasto universo de las TIC."
+  },
+  {
+    id:1,
+    name: 'La anonima 360'
+  },
+  {
+    id:0,
+    name: 'Fundacion FRA'
+  },
+  {
+    id:0,
+    name: 'ASDFG'
+  },
 ]

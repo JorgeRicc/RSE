@@ -14,6 +14,8 @@ import ODS from './Pages/Frontend/ODS.jsx';
 import RSE from './Pages/Frontend/RSE.jsx';
 import Noticias from './Pages/Frontend/Noticias.jsx';
 import Noticia from './Pages/Frontend/Noticia.jsx';
+import Instituciones from './Pages/Frontend/Instituciones.jsx';
+import Institucion from './Pages/Frontend/Institucion.jsx';
 //Backoffice
 import LogIn from './Pages/Backoffice/LogIn.jsx';
 //User
@@ -99,6 +101,8 @@ const RouterApp = (props) => {
             {baseFrontRoutes('/RSE', <RSE />)}
             {baseFrontRoutes('/noticias', <Noticias />)}
             {baseFrontRoutes('/noticias/:newsId', <Noticia />)}
+            {baseFrontRoutes('/instituciones', <Instituciones />)}
+            {baseFrontRoutes('/instituciones/:instId', <Institucion />)}
             {protectedRoutes}
           </Routes>
         </ScrollWrapper>
