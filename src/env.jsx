@@ -47,6 +47,13 @@ const REDIRECT_TYPES = {
   LINK: 1
 }
 
+const CARD_TYPES = {
+  NOTICIAS: '/noticias/',
+  EVENTOS: '/eventos/',
+  CAMPANAS: '/campanas/',
+  INSTITUCIONES: '/instituciones/'
+}
+
 //Main Config
 export const SYSTEM_ELEMENTS = {
     logo: Logo,
@@ -130,7 +137,7 @@ export const FRONTEND_MENU_ELEMENTS = [
   },
   {
     title:'Ingreso',
-    route:'/home'
+    route:'/login'
   },
 ];
 export const FOOTER_CONFIG = [
@@ -277,3 +284,25 @@ export const VALIDATIONS = {
     message: "Caracteres Min 4 Max 100000. Solo ASCI-EX"
   }
 };
+
+
+//Dummy Data
+import PlaceholderImg from "./Assets/Images/SM-placeholder.png"
+import Puerto from "./Assets/DEMOImgs/puerto.jpg"
+
+const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
+
+export const FCARDS = [
+    {
+        id: 0,
+        title: "El puerto se prepara para la exploración petrolera",
+        preview: "El Puerto otorgó un predio de 7.000 m2 para la logística de la explotación petrolera. Se trata de un sector de playón y depósito del predio aledaño a los silos que será destinado a la logística del proyecto de explotación petrolera frente a costas del sudeste bonaerense.",
+        content: <>El Puerto otorgó un predio de 7.000 m2 para la logística de la explotación petrolera. Se trata de un sector de playón y depósito del predio aledaño a los silos que será destinado a la logística del proyecto de explotación petrolera frente a costas del sudeste bonaerense.<br/><br/>Esta superficie operativa de ubicación estratégica, a metros de la dársena de ultramar, resulta relevante para el correcto desarrollo de la actividad vinculada a la búsqueda de hidrocarburos. De acuerdo a lo resuelto, este permiso de uso para esos fines será por el plazo que demande la tarea de este pozo en particular.<br /><br />Esta decisión se tomó en función del pedido realizado por Equinor Argentina BV – Sucursal Argentina y su contratista Kuehne + Nagel, empresas que tienen a su cargo el proyecto de exploración petrolera del Pozo Argerich X1, conforme título otorgado por el Estado Nacional a través de la Resolución 55 de la Secretaría de Energía de la Nación, firmado el 3 de abril de 2020.<br /><br />El permiso de uso del predio se otorgó a favor de la firma local Hipoute S.A. – TC2, la cual presentó la documentación respaldatoria para realizar la logística a pedido de Equinor Argentina BV – Sucursal Argentina y Kuehne + Nagel.</>,
+        date: "16-11-2023",
+        image: Puerto,
+        imageAlt: "alt",
+        color: "green",
+        url: CARD_TYPES.NOTICIAS
+    }
+]

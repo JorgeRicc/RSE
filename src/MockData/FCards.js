@@ -10,7 +10,9 @@ export const FCARDS = [
         date: undefined,
         image: PlaceholderImg,
         imageAlt: "alt",
-        color: "green"
+        color: "green",
+        type: {},
+        url: '{}'
     },
     {
         id: 3,
