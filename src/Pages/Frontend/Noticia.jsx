@@ -19,7 +19,7 @@ const Noticia = () => {
             <section className="py-[1rem] flex flex-col justify-center items-center">
                 <h3 className="text-sm font-semibold my-[1rem]">{FCARDS[newsId].date}</h3>
                 <h1 className="font-bold text-lg text-center px-[1rem]">{FCARDS[newsId]?.title}</h1>
-                <img src={FCARDS[newsId].image} alt="alt" className="w-[96vw] rounded-sm py-[.5rem]"/>
+                <img src={FCARDS[newsId].image} alt="alt" className="rounded-sm py-[.5rem]"/>
                 <p className="py-[1rem] text-center px-[.8rem]">
                     {FCARDS[newsId].content}
                 </p>
