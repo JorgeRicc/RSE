@@ -77,7 +77,7 @@ const FTopBar = (props) => {
                     }
                 </menu>
                 <button onClick={() => setChebronOpen("chebronOpen")} className="rsp-yes-750">
-                    <img src={ICONS.chebron} className="w-[1.3rem] opacity-80 mr-4" />
+                    <img src={ICONS.chebron} className={chebronOpen != "" ? "w-[1.3rem] opacity-80 mr-4 chebron-open-rotate duration-[.5s]" : "w-[1.3rem] opacity-80 mr-4 duration-[.5s]"} />
                 </button>
             </div>
             <div className={`w-[100%] flex flex-col justify-center items-center overflow-hidden duration-700 h-auto max-h-[0vh] ${chebronOpen}`}>

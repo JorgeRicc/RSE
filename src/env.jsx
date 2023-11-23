@@ -133,19 +133,19 @@ export const OFF_MENU_ELEMENTS = [
 ];
 export const SOCIAL_MEDIA = [
     {
-      url:'',
+      url:'https://www.facebook.com/Fundacion360/?locale=es_LA',
       icon: facebook
     },
     {
-      url:'',
+      url:'https://twitter.com/fundacion360ok',
       icon: twitter
     },
     {
-      url:'',
+      url:'https://www.youtube.com/channel/UCqq67UCSrtse07h7HtCdwvw',
       icon: youtube
     },
     {
-      url:'',
+      url:'https://www.instagram.com/fundacion360/',
       icon: instagram
     }
 ];

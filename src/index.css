@@ -36,6 +36,10 @@ body {
   display: none;
 }
 
+.chebron-open-rotate{
+  transform: rotate(90deg);
+}
+
 @media (max-width: 750px) {
   .rsp-none-750 {
     display: none;
