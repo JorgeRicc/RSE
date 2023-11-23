@@ -37,6 +37,7 @@ import Logo from './Assets/DEMO/r-logo.png';
 import RLogo from './Assets/DEMO/f-logo.png';
 import FLogo from './Assets/DEMO/r-logo.png';
 
+import ODS from './Assets/odsIcons/ODS.png';
 import ODS1 from './Assets/odsIcons/1.png';
 import ODS2 from './Assets/odsIcons/2.png';
 import ODS3 from './Assets/odsIcons/3.png';
@@ -56,6 +57,7 @@ import ODS16 from './Assets/odsIcons/16.png';
 import ODS17 from './Assets/odsIcons/17.png';
 
 export const ODS_ICONS = {
+  ODS_0:ODS,
   ODS_1:ODS1,
   ODS_2:ODS2,
   ODS_3:ODS3,

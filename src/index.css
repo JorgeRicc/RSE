@@ -40,6 +40,10 @@ body {
   transform: rotate(90deg);
 }
 
+.chebron-open-vw{
+  max-height: 7rem !important;
+}
+
 @media (max-width: 750px) {
   .rsp-none-750 {
     display: none;
