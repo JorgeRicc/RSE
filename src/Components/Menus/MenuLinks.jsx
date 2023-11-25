@@ -15,10 +15,9 @@ const MenuLinks = (props) => {
         }
     }, [window.location.pathname]);
 
-
     return(
-        <Link className="text-white drop-shadow-md" to={props.item.route}>
-            <div className={`w-[90%] max-w-[295px] mx-auto text-left flex px-[1rem] py-[.7rem] rounded-xl duration-200 ${bg} ${props.item.alert}`}>
+        <Link className="text-white drop-shadow-md " to={props.item.route}>
+            <div className={`w-[90%] max-w-[295px] my-2 mx-auto text-left flex px-[1rem] py-[.7rem] rounded-xl duration-200 ${bg} ${props.item.alert}`}>
                 {
                     props.item?.icon ?
                     <img src={props.item.icon} className="w-[1.75rem]"/>

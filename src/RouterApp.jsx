@@ -24,6 +24,7 @@ import HomeUser from "./Pages/Backoffice/User/HomeUser.jsx";
 import HomeAdmin from "./Pages/Backoffice/Admin/HomeAdmin.jsx";
 import CardDetail from "./Pages/Frontend/CardDetail.jsx";
 import { ScrollWrapper } from "./Components/Wrappers/ScrollWrapper.jsx";
+import InstitucionEdit from "./Pages/Backoffice/Admin/InstitucionEdit.jsx";
 
 //DUMMY DATA BACKOFFICE-NOTIFICATIONS
 /*
@@ -80,6 +81,7 @@ const RouterApp = (props) => {
       setProtectedRoutes(
         <>
           {baseDashboard('/dashboard', <HomeUser />)}
+          {baseDashboard('/institucion_edit', <InstitucionEdit />)}
         </>
       );
     } else {

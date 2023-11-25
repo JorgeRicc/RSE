@@ -25,6 +25,7 @@ import phone from './Assets/Icons/24.svg';
 import coffe from './Assets/Icons/25.svg';
 import mountains from './Assets/Icons/26.svg';
 import chebron from './Assets/Icons/28.svg';
+import pencil from './Assets/Icons/29.svg';
 
 //Social Media Icons
 import facebook from './Assets/SocialM/facebook.svg';
@@ -107,12 +108,19 @@ export const SYSTEM_ELEMENTS = {
 //Backoffice Config
 export const BACKOFFICE_MENU_ELEMENTS = [
     {
-      title:'Ejemplo',
-      route:'ruta',
+      title:'Inicio',
+      route:'/dashboard',
       alert:'normal',
       icon: world,
       user_type_acces: [USER_TYPES.UNRRESTRICTED]
-    }
+    },
+    {
+      title:'Editar Institución',
+      route:'/institucion_edit',
+      alert:'normal',
+      icon: pencil,
+      user_type_acces: [USER_TYPES.UNRRESTRICTED]
+    },
 ];
 
 //Frontend Config
@@ -323,14 +331,18 @@ export const VALIDATIONS = {
   formCaption:{
     regEx:/^[\u0020-\u007E\u00A0-\u00FF\n\r]{4,100000}$/,
     message: "Caracteres Min 4 Max 100000. Solo ASCI-EX"
-  }
+  },
+  textWithCount: (min, max, name) => ({
+    regEx: new RegExp(`^[\u0020-\u007E\u00A0-\u00FF]{${min},${max}}$`),
+    message: `${name || "El campo"} debe tener al menos ${min} caracter${min != 1 ? "es" : ""} y como máximo ${max}.`
+  }),
 };
 
 
 //Dummy Data
 import Puerto from "./Assets/DEMOImgs/puerto.jpg"
 
-const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+export const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 export const FCARDS = [
     {
         id: 0,
@@ -345,6 +357,9 @@ export const FCARDS = [
     }
 ]
 
+import dummylogo1 from './Assets/Images/Lorem-logo-1.png'
+import dummylogo2 from './Assets/Images/Lorem-logo-2.png'
+
 export const INSTIT = [
   {
     id:0,
@@ -356,6 +371,7 @@ export const INSTIT = [
   {
     id:1,
     name: 'La anonima 360',
+    icon: dummylogo1,
     desc: lorem,
     highlights: [ODS_ICONS.ODS_3, ODS_ICONS.ODS_4, ODS_ICONS.ODS_5],
   },
@@ -367,6 +383,7 @@ export const INSTIT = [
   },
   {
     id:3,
+    icon: dummylogo2,
     name: 'ASDFG',
     desc: lorem,
     highlights: [ODS_ICONS.ODS_16, ODS_ICONS.ODS_17],

@@ -18,25 +18,27 @@ const Instituciones = () => {
             {
                 INSTIT.map((item, index) => {
                     return (
-                        <div key={index} className="rounded-xl p-8 bg-gray-100 hover:bg-white transition-all cursor-pointer shadow-2xl my-[1rem] w-[95vw] lg:w-[80vw] py-[1rem]" onClick={() => setIdSelected(item.id)}>
+                        <div key={index} className="rounded-xl p-4 bg-gray-100 hover:bg-white transition-all cursor-pointer shadow-2xl my-[1rem] w-[95vw] lg:w-[80vw] py-[1rem]" onClick={() => setIdSelected(item.id)}>
                             <div className="flex lg:hidden gap-4 justify-center items-center left-0">
                                 {item.highlights?.map(icon =>
                                     <img src={icon} alt="" className='rounded-md justify-self-start max-w-[20vw] max-h-[15vh]' />
                                 )}
                             </div>
                             <div className="flex relative gap-4 pt-2 lg:p-4 justify-center items-center">
-                                <div className="hidden lg:flex absolute gap-4 justify-center items-center left-0">
+                                <div className="hidden lg:flex absolute gap-2 justify-center items-center left-0">
                                     {item.highlights?.map(icon =>
-                                        <img src={icon} alt="" className='rounded-md justify-self-start max-w-[10vw] max-h-[7vh]' />
+                                        <img src={icon} alt="" className='rounded-md justify-self-start max-w-[10vw] max-h-[10vh]' />
                                     )}
                                 </div>
-                                <h3 className="flex justify-center items-center text-center font-semibold justify-self-center lg:min-h-[6vh]">{item.name}</h3>
+                                {
+                                    item.icon ?
+                                        <img src={item.icon} alt={item.name} className='max-h-[10vh] lg:max-h-[9vh]' /> :
+                                        <h3 className="flex justify-center items-center text-center font-semibold justify-self-center lg:min-h-[9vh]">{item.name}</h3>
+                                }
                             </div>
                             <hr className="my-2 border-gray-300" />
-                            <div>
-                                <p className="max-h-[4lh] overflow-hidden">{item.desc}</p>
-                                <TripleDots />
-                            </div>
+                            <p className="max-h-[4lh] overflow-hidden">{item.desc}</p>
+                            <TripleDots />
                         </div>
                     );
                 })

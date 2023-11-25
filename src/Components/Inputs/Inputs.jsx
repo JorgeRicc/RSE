@@ -43,9 +43,9 @@ export const TextInput = (props) => {
         <div className="flex flex-col">
             {
                 props?.disabled ?
-                <input name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] outline-none rounded-xl border-2 text-center p-[.1rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} disabled/>
+                <input defaultValue={props?.defaultValue} name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] outline-none rounded-xl border-2 text-center p-[.1rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} disabled/>
                 :
-                <input name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] outline-none rounded-xl border-2 text-center p-[.1rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} required={props?.required}/>
+                <input defaultValue={props?.defaultValue} name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] outline-none rounded-xl border-2 text-center p-[.1rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} required={props?.required}/>
             }
             {
                 onError ?
@@ -97,9 +97,9 @@ export const TextArea = (props) => {
         <div className="flex flex-col">
             {
                 props?.disabled ?
-                <textarea name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] min-h-[15rem] outline-none rounded-xl border-2 text-left p-[.5rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} disabled/>
+                <textarea defaultValue={props?.defaultValue} name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] min-h-[15rem] outline-none rounded-xl border-2 text-left p-[.5rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} disabled/>
                 :
-                <textarea name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] min-h-[15rem] outline-none rounded-xl border-2 text-left p-[.5rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} required={props?.required}/>
+                <textarea defaultValue={props?.defaultValue} name={props?.name} id={props?.id} type={props?.inputType} style={{...props?.elementStyles}} placeholder={props?.placeholder} onChange={onChangeHandler} onBlur={onBlurHandler} className={`shadow-x w-[16rem] min-h-[15rem] outline-none rounded-xl border-2 text-left p-[.5rem] opacity-75 duration-200 focus:opacity-100 focus:border-green-500 ${color}`} required={props?.required}/>
             }
             {
                 onError ?
