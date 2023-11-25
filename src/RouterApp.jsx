@@ -93,6 +93,7 @@ const RouterApp = (props) => {
       <BrowserRouter>
         <ScrollWrapper>
           <Routes>
+            <Route path="/" element={<Navigate to="/home" replace={true} />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/login" element={<LogIn logo={SYSTEM_ELEMENTS.rLogo} setUser={setUser} setIsOnMessage={props.setIsOnMessage} setIsOnLoading={props.setIsOnLoading} />} />
             {baseFrontRoutes('/home', <Home />)}

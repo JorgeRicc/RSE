@@ -350,18 +350,25 @@ export const INSTIT = [
     id:0,
     name: 'Fundacion 360',
     icon: Logo,
-    desc:"Fundación 360 se erige como un faro de inspiración para el público joven, guiándolos hacia el fascinante mundo de las tecnologías de la información y la comunicación (TIC). A través de cursos y eventos dinámicos, nuestra fundación se dedica apasionadamente a fomentar vocaciones en el ámbito de las TIC. Buscamos no solo transmitir conocimientos prácticos, sino también encender la chispa de la curiosidad y la creatividad. En Fundación 360, creemos que al nutrir las habilidades digitales desde una edad temprana, estamos construyendo puentes hacia un futuro donde la innovación y la tecnología son accesibles para todos. Únete a nosotros en este emocionante viaje de descubrimiento y crecimiento en el vasto universo de las TIC."
+    desc:"Fundación 360 se erige como un faro de inspiración para el público joven, guiándolos hacia el fascinante mundo de las tecnologías de la información y la comunicación (TIC). A través de cursos y eventos dinámicos, nuestra fundación se dedica apasionadamente a fomentar vocaciones en el ámbito de las TIC. Buscamos no solo transmitir conocimientos prácticos, sino también encender la chispa de la curiosidad y la creatividad. En Fundación 360, creemos que al nutrir las habilidades digitales desde una edad temprana, estamos construyendo puentes hacia un futuro donde la innovación y la tecnología son accesibles para todos. Únete a nosotros en este emocionante viaje de descubrimiento y crecimiento en el vasto universo de las TIC.",
+    highlights: [ODS_ICONS.ODS_2, ODS_ICONS.ODS_1, ODS_ICONS.ODS_3],
   },
   {
     id:1,
-    name: 'La anonima 360'
+    name: 'La anonima 360',
+    desc: lorem,
+    highlights: [ODS_ICONS.ODS_3, ODS_ICONS.ODS_4, ODS_ICONS.ODS_5],
   },
   {
-    id:0,
-    name: 'Fundacion FRA'
+    id:2,
+    name: 'Fundacion FRA',
+    desc: lorem + lorem + lorem + lorem,
+    highlights: [ODS_ICONS.ODS_2],
   },
   {
-    id:0,
-    name: 'ASDFG'
+    id:3,
+    name: 'ASDFG',
+    desc: lorem,
+    highlights: [ODS_ICONS.ODS_16, ODS_ICONS.ODS_17],
   },
 ]

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, Navigate } from "react-router-dom";
+import TripleDots from "../Icons/TripleDots";
 
 /* 
     title: string,
@@ -35,8 +36,8 @@ const FImageCard = ({ title, date, preview, image, imageAlt, color, url }) => {
                     </div>
                 </div>
                 <div className="mt-[1rem]">
-                    <p className="text-lg max-h-[5rem] overflow-hidden">{preview}</p>
-                    <p className="text-center text-xl font-bold">...</p>
+                    <p className="text-lg max-h-[3lh] overflow-hidden">{preview}</p>
+                    <TripleDots />
                 </div>
         </div>
     );
