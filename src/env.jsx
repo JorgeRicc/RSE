@@ -251,10 +251,10 @@ export const FOOTER_CONFIG = [
       ]
   },
   {
-    title:'Desarrollado por Fundacion 360',
+    title:'Desarrollado por Fundación 360',
     elements: [
         {
-            title:'Fudnacion 360',
+            title:'Fundación 360',
             url:'https://fundacion360.com.ar/index.html',
             type: REDIRECT_TYPES.BLANK
         }
