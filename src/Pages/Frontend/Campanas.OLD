@@ -1,0 +1,31 @@
+import { useState } from "react";
+import { FCAMP} from "../../env";
+import { Navigate, useParams } from "react-router-dom";
+
+
+
+const campanas = () => {
+
+    const [notFound, setNotFound] = useState(false);
+
+    let { campanasId } = useParams();
+    campanasId = parseInt(campanasId);
+
+    return(
+        <>
+            {
+                notFound && (<Navigate to="/404" replace={true} />)
+            }
+            <section className="py-[1rem] flex flex-col justify-center items-center">
+                <h3 className="text-sm font-semibold my-[1rem]">{FCAMP[campanasId].date}</h3>
+                <h1 className="font-bold text-lg text-center px-[1rem]">{FCAMP[campanasId]?.title}</h1>
+                <img src={FCAMP[campanasId].image} alt="alt" className="rounded-sm py-[.5rem]"/>
+                <p className="py-[1rem] text-center px-[.8rem]">
+                    {FCAMP[campanasId].content}
+                </p>
+            </section>
+        </>
+    );
+};
+
+export default campanas;

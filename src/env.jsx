@@ -166,15 +166,15 @@ export const FRONTEND_MENU_ELEMENTS = [
   },
   {
     title:'Noticias',
-    route:'/home'
+    route:'/noticias'
   },
   {
     title:'Eventos',
-    route:'/home'
+    route:'/eventos'
   },
   {
     title:'Campañas',
-    route:'/home'
+    route:'/campanas'
   },
   {
     title:'Instituciones',
@@ -341,6 +341,7 @@ export const VALIDATIONS = {
 
 //Dummy Data
 import Puerto from "./Assets/DEMOImgs/puerto.jpg"
+import sannare from "./Assets/DEMOImgs/SANNARE.jpg"
 
 export const lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 export const FCARDS = [
@@ -354,8 +355,99 @@ export const FCARDS = [
         imageAlt: "alt",
         color: "green",
         url: CARD_TYPES.NOTICIAS
+    },
+    {
+    id: 1,
+    title: "Sannare: atención sanitaria para el futuro de la salud",
+    preview: "La industria de la atención médica enfrenta desafíos complejos que las organizaciones pueden abordar recurriendo a tecnologías innovadoras, como la Inteligencia Artificial. Sannare, plataforma de salud basada en IA, desarrolla los 3 principales factores que darán forma a la atención sanitaria de 2024.",
+    content: <>Sannare, la plataforma con motor de triage médico con Inteligencia Artificial, analiza las problemáticas que están impactando en la atención médica y cómo las tecnologías innovadoras pueden ayudar a organizaciones a hacer frente a ese desafío.<br/><br/>“La industria de la atención médica enfrenta desafíos complejos, como la escasez de personal, el agotamiento de los médicos y la disminución de la rentabilidad, especialmente en comunidades desatendidas. Para abordar estos problemas y garantizar la sostenibilidad, las organizaciones pueden recurrir a tecnologías innovadoras, incluida la inteligencia artificial, para mejorar la atención médica  y restablecer la confianza. Esta tecnología provee soluciones tanto para aplicaciones empresariales como para el consumidor directo”, analizó Andrea Mandelbaum, CEO de Sannare, y afirmó: “En todos estos aspectos, el ecosistema de Sannare alcanza sus metas al posicionarse como la plataforma más completa del mercado para acompañar al paciente a lo largo de todas sus fases, que incluyen atención primaria, estudios médicos, urgencias, así como el monitoreo y seguimiento en tratamientos de corto, mediano y largo plazo. Con una perspectiva holística del paciente, se enfoca en preservar tanto su bienestar físico como mental”.<br/><br/><br/><br/><br/><br/><strong style={{ fontWeight: 'bold' }}>Para Andrea Mandelbaum son 3 los factores que darán forma a la atención sanitaria de 2024:</strong><br/><br/><br/><br/><strong style={{ fontWeight: 'bold' }}>Asequibilidad a la salud:</strong><br/> El aumento de la inflación médica y los costos de cobertura podría resultar en mayores gastos de bolsillo para los consumidores en 2024. Se espera un aumento en los gastos de atención médica del consumidor, por lo que la asequibilidad es una preocupación clave para ejecutivos de planes de salud. Los consumidores, centrados en la conveniencia y el precio, están influenciando la transición en el sector de la salud. <br/>“Los prestadores pueden impactar las decisiones de salud ofreciendo herramientas digitales para guiar a los consumidores en su recorrido por la atención médica, brindando opciones más asequibles y construyendo la lealtad del paciente.  Nuestra plataforma trabaja colaborando con el paciente en todos sus requerimientos de salud como triage médico, donde pueden expresar sus síntomas a la IA de Sannare  y contactarse con médicos virtuales, obtener citas presenciales, a domicilio, ambulancias, entre otros. También seleccionar los especialistas de acuerdo con sus necesidades, confirmar las citas, cambiarlas, cancelarlas, y hasta gestionar sus estudios y resultados. Además, gestionar sus requerimientos no clínicos como autorizaciones, pagos, reclamos. Todo desde un mismo lugar tanto por whatsapp, App o teléfono”, explicó Andrea Mandelbaum. “Estos servicios de salud digital colaboran con el paciente y la entidad prestadora a brindar mejores experiencias para el usuario con una atención de 24/7 sin esperas ni fisuras”.<br/><br/><strong style={{ fontWeight: 'bold' }}>Colaboración con los médicos:</strong> <br/> Más de la mitad de los ejecutivos del sistema de salud (57%) esperan que la escasez de talento y los desafíos de la fuerza laboral afecten la estrategia de su organización en 2024, según una encuesta de Deloitte.<br/>“Muchos ejecutivos de sistemas de salud están tratando de atraer y retener al personal clínico sin dejar de centrarse en reducir el agotamiento de los médicos.  Con Sannare trabajamos en 3 niveles: el paciente, el médico y el prestador. Colaboramos con el médico en la sugerencia de diagnóstico, de exámenes médicos a partir de diagnóstico clínico, coordinación de citas y preparación de estudios médicos. De esta forma, logramos reducir un 23% la duración  de las citas y mitigar considerablemente la fatiga al término de la jornada. Buscamos colaborar estrechamente con el profesional, proporcionándole el respaldo de nuestros motores de inteligencia artificial para que pueda ofrecer un servicio de alta calidad”, sostuvo la CEO de Sannare.<br/><br/><strong style={{ fontWeight: 'bold' }}>Pacientes empoderados: </strong><br/> La revolución de la salud digital ha transformado a los pacientes de receptores pasivos a participantes activos en su bienestar. Gracias a datos en tiempo real, información personalizada y conectividad, los médicos reciben los datos de los pacientes y pueden tomar decisiones informadas para mejorar resultados de salud. <br/>“Para garantizar que la salud digital beneficie a todos, es crucial priorizar el acceso equitativo, privacidad de datos y consideraciones éticas. La integración de IA y aprendizaje automático de la plataforma Sannare contribuye a mejorar la predicción de riesgo,  genera tratamientos personalizados y gestión de la salud, marcando una nueva modalidad en la atención al paciente en la era digital”, afirmó Mandelbaum.<br/><br/><br/>Acerca de Sannare: Es un equipo multidisciplinario compuesto por médicos, enfermeras, especialistas en experiencia del cliente, ingenieros y científicos de inteligencia artificial de nivel mundial para crear la plataforma más innovadora del mercado. Los mueve la vocación de colaborar en una salud médica más accesible aportando nuestros conocimientos de tecnología. Crearon y desarrollaron soluciones que permitan a los pacientes y proveedores contar con información avanzada para la toma de decisiones. Miden constantemente los resultados y se anticipan a las necesidades de sus clientes. Para más información puede ingresar en www.sannare.com</>,
+    date: "16-01-2024",
+    image: SANNARE,
+    imageAlt: "alt",
+    color: "green",
+    url: CARD_TYPES.NOTICIAS
+    }
+]// Eventos
+export const FEVENTS = [
+  {
+      id: 0,
+      title: "Conferencia de Innovación Tecnológica",
+      preview: "Evento dedicado a las nuevas tendencias en tecnología y su impacto en la sociedad.",
+      content: <>Un encuentro donde expertos de distintas áreas presentan las últimas innovaciones tecnológicas y debaten sobre el futuro del sector. La conferencia incluye una variedad de temas como inteligencia artificial, robótica, y ciberseguridad, entre otros.</>,
+      date: "01-12-2023",
+      image: exporobotica,
+      imageAlt: "Conferencia de Innovación",
+      color: "blue",
+      url: CARD_TYPES.EVENTOS
+  },
+  {
+      id: 1,
+      title: "Feria de Emprendimiento Social",
+      preview: "Oportunidad para conocer proyectos de impacto social impulsados por jóvenes emprendedores.",
+      content: <>Esta feria reúne a emprendedores sociales que buscan mejorar sus comunidades a través de iniciativas innovadoras. Los asistentes podrán conocer y apoyar diversos proyectos, así como participar en talleres de emprendimiento.</>,
+      date: "20-01-2024",
+      image: exporobotica,
+      imageAlt: "Feria de Emprendimiento",
+      color: "green",
+      url: CARD_TYPES.EVENTOS
+  }
+];
+
+// campañas agregado recientemente
+export const FCAMP = [
+  {
+      id: 0,
+      title: " curso Competencias digitales Centro Comunitario Integral Nuestra Señora de Luján ",
+      preview: " rchicos del Centro Comunitario Integral Nuestra Señora de Luján ya terminaron su curso de COMPETENCIAS DIGITALES NIVEL INICIAL desarrollado durante el ciclo lectivo 2023.",
+      content: <>Los chicos del Centro Comunitario Integral Nuestra Señora de Luján ya terminaron su curso de COMPETENCIAS DIGITALES NIVEL INICIAL desarrollado durante el ciclo lectivo 2023. Durante este año los chicos pudieron obtener conocimientos basicos de competencias digitales, como word excel, paint, busqueda en internet, etc. Las cuales les seran utiles para su futuro.</>,
+      date: "16-11-2023",
+      image: hermanamarta,
+      imageAlt: "alt",
+      color: "green",
+      url: CARD_TYPES.CAMPANAS
+  },
+  {
+  id: 1,
+  title: " Expo Robotica 2023",
+  preview: "Los días 9, 1110 y 11 de octubre se desarrollaron las jornadas REM 2023.",
+  content: <>Los días 9, 1110 y 11 de octubre se desarrollaron las jornadas REM 2023, en el marco del Programa Despertar Vocaciones TIC que organiza la Secretaría de Desarrollo Productivo e Innovación junto con la
+  Secretaría de Educación Municipal y la Subsecretaría de Gobierno Digital.
+  Las mismas se llevaron a cabo en el Hall Central del Palacio Municipal.
+  En ella se demostraron micro experiencias educativas híbridas con elementos de robótica y domótica de:
+  • Movilidad Urbana Sustentable
+  (MUS)
+  • Robótica Educativa Modular
+  • Educación 4.0
+  • Impresión 3D
+  • Colaboratorio Robótica - Domótica.
+  Gracias a todos los que nos acompañaron.</>,
+  date: "16-01-2024",
+  image: exporobotica,
+  imageAlt: "alt",
+  color: "green",
+  url: CARD_TYPES.CAMPANAS
+  },
+  {
+    id: 2,
+    title: " Taller de Robotica y programación en Fundación Pupi",
+    preview: "El equipo de Fundación360 ha impartido talleres de robótica y programación a jóvenes de entre 14 y 18 años de edad, de la 📍“Fundación Pupi”...",
+    content: <>En el día de ayer, el equipo de Fundación360 ha impartido talleres de robótica y programación a jóvenes de entre 14 y 18 años de edad, de la 📍“Fundación Pupi”, brindando oportunidades de aprendizaje y desarrollo en tecnología que sin duda beneficiarán a estos jóvenes en su futuro.
+    • Gracias por recibirnos fundacionpupi</>,
+    date: "22-02-2024",
+    image: pupi,
+    imageAlt: "alt",
+    color: "green",
+    url: CARD_TYPES.CAMPANAS
     }
 ]
+import exporobotica from "./Assets/DEMOImgs/exporobotica.png"
+import hermanamarta from "./Assets/DEMOImgs/hermanamarta.png"
+import pupi from "./Assets/DEMOImgs/pupi.png"
+//Dummy Data
+import SANNARE from "./Assets/DEMOImgs/SANNARE.jpg"
+
+export const lorem2 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
 
 import dummylogo1 from './Assets/Images/Lorem-logo-1.png'
 import dummylogo2 from './Assets/Images/Lorem-logo-2.png'

@@ -59,4 +59,13 @@ export const FCARDS = [
         imageAlt: "alt",
         color: "green"
     },
+    {
+        id: 11,
+        title: "Titulo de Card",
+        content: lorem,
+        date: undefined,
+        image: PlaceholderImg,
+        imageAlt: "alt",
+        color: "green"
+    },
 ]
