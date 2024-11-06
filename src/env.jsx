@@ -93,7 +93,8 @@ const CARD_TYPES = {
   NOTICIAS: '/noticias/',
   EVENTOS: '/eventos/',
   CAMPANAS: '/campanas/',
-  INSTITUCIONES: '/instituciones/'
+  INSTITUCIONES: '/instituciones/',
+  Nosotros:'/nosotros/'
 }
 
 //Main Config
@@ -182,7 +183,7 @@ export const FRONTEND_MENU_ELEMENTS = [
   },
   {
     title:'Nosotros',
-    route:'/home'
+    route:'/nosotros'
   },
   {
     title:'Ingreso',
@@ -440,6 +441,16 @@ export const FCAMP = [
     url: CARD_TYPES.CAMPANAS
     }
 ]
+// nosotros agregado recientemente
+export const FNOS = [
+  {
+    id:0,
+    name: 'Fundacion 360',
+    image: Logo,
+    desc:"Fundación 360 se erige como un faro de inspiración para el público joven, guiándolos hacia el fascinante mundo de las tecnologías de la información y la comunicación (TIC). A través de cursos y eventos dinámicos, nuestra fundación se dedica apasionadamente a fomentar vocaciones en el ámbito de las TIC. Buscamos no solo transmitir conocimientos prácticos, sino también encender la chispa de la curiosidad y la creatividad. En Fundación 360, creemos que al nutrir las habilidades digitales desde una edad temprana, estamos construyendo puentes hacia un futuro donde la innovación y la tecnología son accesibles para todos. Únete a nosotros en este emocionante viaje de descubrimiento y crecimiento en el vasto universo de las TIC.",
+    highlights: [ODS_ICONS.ODS_2, ODS_ICONS.ODS_1, ODS_ICONS.ODS_3],
+  }
+];
 import exporobotica from "./Assets/DEMOImgs/exporobotica.png"
 import hermanamarta from "./Assets/DEMOImgs/hermanamarta.png"
 import pupi from "./Assets/DEMOImgs/pupi.png"

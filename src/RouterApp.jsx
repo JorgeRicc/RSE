@@ -14,6 +14,7 @@ import ODS from './Pages/Frontend/ODS.jsx';
 import RSE from './Pages/Frontend/RSE.jsx';
 import Noticias from './Pages/Frontend/Noticias.jsx';
 import Noticia from './Pages/Frontend/Noticia.jsx';
+import Nosotros from './Pages/Frontend/Nosotros.jsx';
 import Eventos from './Pages/Frontend/Eventos.jsx';
 import Campanas from './Pages/Frontend/Campanas.jsx';
 import Instituciones from './Pages/Frontend/Instituciones.jsx';
@@ -93,6 +94,7 @@ const RouterApp = (props) => {
 
           {/* Otras Páginas */}
           {baseFrontRoutes('/campanas', <Campanas />)}
+          {baseFrontRoutes('/nosotros', <Nosotros />)}
           {baseFrontRoutes('/campanas/:campanasId', <Campanas />)}
           {baseFrontRoutes('/instituciones', <Instituciones />)}
           {baseFrontRoutes('/instituciones/:instId', <Institucion />)}
